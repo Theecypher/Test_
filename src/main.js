@@ -1,6 +1,5 @@
+import "./style.css";
 
-import "./style.css"
-
-import "./caesarCipher"
-import "./analyzeArray"
-
+import "./caesarCipher";
+import "./analyzeArray";
+import "./reverseString";
