@@ -37,4 +37,4 @@ console.log(object);
 
 // export {analyzeArray}
 
-module.exports = analyzeArray;
+// module.exports = analyzeArray;

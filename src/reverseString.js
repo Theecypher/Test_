@@ -15,5 +15,9 @@ function reverseString(letter) {
 
     str = arr.join("");
   }
-  return str
+  return str;
 }
+
+console.log(reverseString("hello"));
+
+module.exports = reverseString ;
