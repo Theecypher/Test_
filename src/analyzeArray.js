@@ -23,17 +23,18 @@ function analyzeArray(arr) {
     }
   }
 
-  return `{length: ${length}, sum: ${sum}, average: ${average}, max: ${max}, min: ${min}}, `;
+  return {
+  average: average,
+  min: min,
+  max: max,
+  length: length,
+};
 }
 
 const object = analyzeArray([1, 8, 3, 4, 2, 6]);
-const object2 = analyzeArray([50, 49, 6, 77, 88, 23, 20]);
 
-console.log(object2);
+console.log(object);
 
-// object == {
-//    average: 4,
-//    min: 1,
-//    max: 8,
-//    length: 6
-// };
+// export {analyzeArray}
+
+module.exports = analyzeArray;
