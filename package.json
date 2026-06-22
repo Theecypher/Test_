@@ -1,14 +1,17 @@
 {
-  "name": "weather_app",
+  "name": "odin_test",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "jest"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.29.7",
+    "jest": "^30.4.2",
     "vite": "^8.0.12"
   }
 }

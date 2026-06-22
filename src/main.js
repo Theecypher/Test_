@@ -1,2 +1,6 @@
-import "./app/script";
-import "./app/style.css";
+
+import "./style.css"
+
+import "./caesarCipher"
+import "./analyzeArray"
+
