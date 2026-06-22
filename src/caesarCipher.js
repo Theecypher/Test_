@@ -38,7 +38,7 @@ function shiftChar(char, shift) {
   }
 
   const shifted = shiftLetter(lowerChar, shift);
-  return isUpperCase ? shifted.toLowerCase() : shifted;
+  return isUpperCase ? shifted.toUpperCase() : shifted;
 }
 
 function caesarCipher(str, shift) {
@@ -47,4 +47,6 @@ function caesarCipher(str, shift) {
     .map((char) => shiftChar(char, shift))
     .join("");
 }
-console.log(caesarCipher("hello", 3));
+console.log(caesarCipher("Hello World!", 3));
+
+module.exports = caesarCipher;

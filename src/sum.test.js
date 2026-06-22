@@ -1,6 +1,7 @@
 const sum = require("./sum");
 const capitalize = require("./algorithm");
 const analyzeArray = require("./analyzeArray");
+const caesarCipher = require("./caesarCipher");
 
 test("adds 1 + 2 to equal 3", () => {
   expect(sum(1, 2)).toBe(3);
@@ -17,4 +18,7 @@ test("analyzeArray returns correct stats", () => {
     max: 8,
     length: 6,
   });
+});
+test("caesarCipher returns correct string", () => {
+  expect(caesarCipher("Hello, World!", 3)).toBe("Khoor, Zruog!");
 });
