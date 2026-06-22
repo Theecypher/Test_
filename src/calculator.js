@@ -1,17 +1,23 @@
-const Calculator = {
-  add: function (a, b) {
+function calculator() {
+  const add = (a, b) => {
     return a + b;
-  },
-
-  subtract: function (a, b) {
+  };
+  const subtract = (a, b) => {
     return a - b;
-  },
-
-  divide: function (a, b) {
-    return a / b;
-  },
-
-  multiply: function (a, b) {
+  };
+  const multiply = (a, b) => {
     return a * b;
-  },
-};
+  };
+  const divide = (a, b) => {
+    return a / b;
+  };
+
+  return {
+    add,
+    subtract,
+    multiply,
+    divide,
+  };
+}
+
+export default calculator;
